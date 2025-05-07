@@ -12,10 +12,10 @@ public class HelloWorldController: Controller
     }
 
     // GET: /HelloWorld/Welcome/
-    public IActionResult Welcome(string name, int numTimes = 1)
+    public IActionResult Welcome(string name, int NumTimes = 1)
     {
         ViewData["Message"] = "Hello " + name;
-        ViewData["NumTimes"] = numTimes;
+        ViewData["NumTimes"] = NumTimes;
 
         return View();
     }
